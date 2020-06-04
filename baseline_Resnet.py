@@ -170,8 +170,6 @@ def initialize_model(model_name, num_classes, feature_extract, use_pretrained=Fa
     return model_ft, input_size
 
 model_ft, input_size = initialize_model(model_name, num_classes, feature_extract, use_pretrained=False)
-print(input_size)
-print(model_ft)
 
 data_transforms = {
     'train': transforms.Compose([
